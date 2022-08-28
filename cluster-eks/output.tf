@@ -9,7 +9,6 @@ output "s3_region" {
 output "endpoint" {
   value = aws_eks_cluster.devopseks.endpoint
 }
-
-output "kubeconfig-certificate-authority-data" {
-  value = aws_eks_cluster.devopseks.certificate_authority[0].data
+output "cluster_name" {
+  value = aws_eks_cluster.devopseks.name
 }
